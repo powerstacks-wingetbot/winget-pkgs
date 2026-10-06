@@ -1,0 +1,29 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Datadog.dd-trace-dotnet
+PackageVersion: 3.55.0
+InstallerLocale: en-US
+InstallerType: wix
+Scope: machine
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+InstallerSwitches:
+  Custom: ALLUSERS="1" PATHSHORTCUT="1"
+UpgradeBehavior: install
+ProductCode: '{B5F43BE3-8330-44A5-8F19-C52A5871F748}'
+ReleaseDate: 2026-10-05
+AppsAndFeaturesEntries:
+- DisplayName: Datadog .NET Tracer 64-bit
+  ProductCode: '{B5F43BE3-8330-44A5-8F19-C52A5871F748}'
+  UpgradeCode: '{FC228E86-EAE2-4C2A-AE82-135B718C269E}'
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%/Datadog/.NET Tracer'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/DataDog/dd-trace-dotnet/releases/download/v3.55.0/datadog-dotnet-apm-3.55.0-x64.msi
+  InstallerSha256: 316EC049F161969BFCF7E77BB40C88E7EC4B60662A21A5C829DFAB0F1C2DE7C6
+ManifestType: installer
+ManifestVersion: 1.12.0
