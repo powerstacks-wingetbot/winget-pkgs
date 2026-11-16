@@ -24,6 +24,9 @@ ProductCode: Vim (current user)
 ReleaseDate: 2026-11-16
 Installers:
 - Architecture: x86
+  Scope: user
+  InstallerSwitches:
+    Custom: /currentuser
   InstallerUrl: https://github.com/vim/vim-win32-installer/releases/download/v9.2.1355/gvim_9.2.1355_x86.exe
   InstallerSha256: 3B85710B0364EA9570D0EF8D00D0B614B2101CF4C0947CC5EBA203FBD9D24505
   AppsAndFeaturesEntries:
@@ -31,7 +34,22 @@ Installers:
     Publisher: The Vim Project
     DisplayVersion: 9.2.1355
     ProductCode: Vim (current user)
+- Architecture: x86
+  Scope: machine
+  InstallerSwitches:
+    Custom: /allusers
+  ProductCode: Vim
+  InstallerUrl: https://github.com/vim/vim-win32-installer/releases/download/v9.2.1355/gvim_9.2.1355_x86.exe
+  InstallerSha256: 3B85710B0364EA9570D0EF8D00D0B614B2101CF4C0947CC5EBA203FBD9D24505
+  AppsAndFeaturesEntries:
+  - DisplayName: Vim 9.2 (x86)
+    Publisher: The Vim Project
+    DisplayVersion: 9.2.1355
+    ProductCode: Vim
 - Architecture: x64
+  Scope: user
+  InstallerSwitches:
+    Custom: /currentuser
   InstallerUrl: https://github.com/vim/vim-win32-installer/releases/download/v9.2.1355/gvim_9.2.1355_x64.exe
   InstallerSha256: FEA5EA1BE8EE3250AA0854BA22B2BAF9FCEAD42A8C5E403DC7A8C1F8A86B46E0
   AppsAndFeaturesEntries:
@@ -39,7 +57,22 @@ Installers:
     Publisher: The Vim Project
     DisplayVersion: 9.2.1355
     ProductCode: Vim (current user)
+- Architecture: x64
+  Scope: machine
+  InstallerSwitches:
+    Custom: /allusers
+  ProductCode: Vim
+  InstallerUrl: https://github.com/vim/vim-win32-installer/releases/download/v9.2.1355/gvim_9.2.1355_x64.exe
+  InstallerSha256: FEA5EA1BE8EE3250AA0854BA22B2BAF9FCEAD42A8C5E403DC7A8C1F8A86B46E0
+  AppsAndFeaturesEntries:
+  - DisplayName: Vim 9.2 (x64)
+    Publisher: The Vim Project
+    DisplayVersion: 9.2.1355
+    ProductCode: Vim
 - Architecture: arm64
+  Scope: user
+  InstallerSwitches:
+    Custom: /currentuser
   InstallerUrl: https://github.com/vim/vim-win32-installer/releases/download/v9.2.1355/gvim_9.2.1355_arm64.exe
   InstallerSha256: A9076B52EAA6CE9D9A127441C6E36CC4AA24D28338A08FC7B078DD6D4E1347D8
   AppsAndFeaturesEntries:
@@ -47,5 +80,17 @@ Installers:
     Publisher: The Vim Project
     DisplayVersion: 9.2.1355
     ProductCode: Vim (current user)
+- Architecture: arm64
+  Scope: machine
+  InstallerSwitches:
+    Custom: /allusers
+  ProductCode: Vim
+  InstallerUrl: https://github.com/vim/vim-win32-installer/releases/download/v9.2.1355/gvim_9.2.1355_arm64.exe
+  InstallerSha256: A9076B52EAA6CE9D9A127441C6E36CC4AA24D28338A08FC7B078DD6D4E1347D8
+  AppsAndFeaturesEntries:
+  - DisplayName: Vim 9.2 (ARM64)
+    Publisher: The Vim Project
+    DisplayVersion: 9.2.1355
+    ProductCode: Vim
 ManifestType: installer
 ManifestVersion: 1.28.0
